@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom</title>
+</head>
+<body>
+    <ul>
+        <li><a href="educador.html">Início</a></li>
+        <li><a href="bloom.html">Bloom</a></li>
+        <li><a href="verbo.html"> Verbo</a></li>
+        <li><a href="competencia.html">Competência</a></li>
+        <li><a href="etapa.html"> Etapa</a></li>
+        <li><a href="missao.html">Missão</a> </li>
+        <li><a href="historia.html">História</a> </li>
+    </ul>
+    <br><br>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(5, 77, 110);">Cadastrar Bloom</h1>
+    <br>
+
+    <form style="font-family: Arial, Helvetica, sans-serif;" onsubmit="cadastrarBloom(); return false">
+        <label>Nome: </label>
+        <input type="text" id="nome">
+        <input type="submit" value="Cadastrar ➕">
+
+    </form> <br><br>
+
+
+    <table style="font-family:Arial, Helvetica, sans-serif" border="1">
+        <thead>
+            <tr>
+                <th width="50">ID</th>
+                <th width="200">Nome</th>
+                <th width="170">Ações</th>
+            </tr>
+            <tbody align="center" id="linhaTabela"></tbody>
+        </thead>
+    </table>
+
+    <script src="js/bloom.js"></script>
+</body>
+</html>

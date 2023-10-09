@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão 01</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .img-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            color: rgb(255, 194, 109);
+            margin-top: 10px;
+            text-align: center;
+            font-size: 40px;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        ul{
+            color:rgb(139, 253, 255);
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          }
+
+        img {
+
+            margin-left: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="educador.html">Início</a></li>
+        <li><a href="bloom.html">Bloom</a></li>
+        <li><a href="verbo.html"> Verbo</a></li>
+        <li><a href="competencia.html">Competência</a></li>
+        <li><a href="etapa.html"> Etapa</a></li>
+        <li><a href="missao.html">Missão</a> </li>
+        <li><a href="historia.html">História</a> </li>
+    </ul>
+    <br><br>
+    <!--Nesse episódio quero começar falando sobre o Canvas
+    
+        O canvas é um recurso usado para jogos usando JavaScript. Nele podemos
+        criar imagens e realizar animações.  
+    
+    -->
+
+    <p></p>
+    <ul>
+        <a href="respmissao1.html"><li>Portal Conceital</li></a>
+        
+        <li>Portal Estrutural</li>
+        <li>Portal Essencial</li>
+    </ul>
+
+    <div class="img-container">
+
+
+        <canvas id="jogo" width="300" height="300">
+            O browser não suporta a tecnologia
+        </canvas>
+
+    </div>
+
+
+
+    <script>
+        var canvas = document.getElementById("jogo")
+        var context = canvas.getContext("2d")
+        var imagem = new Image()
+        imagem.src = "img/furao-guerreiro.png"
+
+
+        var mensagem = document.querySelector("p")
+
+        mensagem.innerHTML = `Missão 1 - Encontrar tags`
+
+
+
+    </script>
+</body>
+
+</html>
